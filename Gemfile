@@ -2,14 +2,18 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.1.1'
 
-group :development do
+group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails', '2.6.1'
+  gem 'autotest'
+  gem 'autotest-rails'
+  gem 'autotest-notification'
+  gem 'autotest-standalone'
 end
 
 group :test do
-  gem 'rspec-rails', '2.6.1'
   gem 'webrat', '0.7.1'
+  gem 'spork', '~> 0.9.0rc'
 end
 
 group :production do
