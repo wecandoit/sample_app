@@ -5,6 +5,7 @@ gem 'rails', '3.1.1'
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails', '2.6.1'
+  gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'
 end
 
 group :test do
@@ -29,3 +30,5 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'execjs'
+gem 'therubyracer'
